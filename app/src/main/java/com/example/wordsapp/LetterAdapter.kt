@@ -67,7 +67,7 @@ class LetterAdapter :
         holder.button.setOnClickListener {
             val context = holder.view.context
             val intent = Intent(context, DetailActivity::class.java)
-            intent.putExtra(DetailActivity.LETTER, holder.button.text.toString())
+            intent.putExtra(WordListFragment.LETTER, holder.button.text.toString())
             //Toast.makeText(context, holder.button.text.toString(), Toast.LENGTH_SHORT).show()
             context.startActivity(intent)
         }
