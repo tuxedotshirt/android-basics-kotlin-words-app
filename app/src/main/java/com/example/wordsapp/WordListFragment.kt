@@ -36,7 +36,7 @@ class WordListFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentWordListBinding.inflate(inflater, container, true)
+        _binding = FragmentWordListBinding.inflate(inflater, container, false)
         //val view = binding.root
         return binding.root
     }
